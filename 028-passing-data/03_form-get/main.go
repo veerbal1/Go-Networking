@@ -10,7 +10,7 @@ func main() {
 		v := r.FormValue("q")
 		rw.Header().Set("Content-Type", "text/html; charset=utf-8")
 		io.WriteString(rw, `
-		<form method="post">
+		<form method="get">
 		<input type="text" name="q"/>
 		<input type="submit" />
 		</form>`+v)
